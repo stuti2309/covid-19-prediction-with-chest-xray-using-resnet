@@ -1,9 +1,3 @@
-body::before {
-  display: block;
-  content: '';
-  height: 60px;
-}
-
 #map {
   width: 100%;
   height: 100%;
@@ -123,5 +117,14 @@ img#flag {
 .yellows{
   background-color: #ffd86b;
   font: black;
+}
+
+/* Scroll to Top */
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+  background-color: chartreuse;
 }
 
