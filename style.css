@@ -118,7 +118,25 @@ img#flag {
   background-color: #ffd86b;
   font: black;
 }
-
+/* covid cards */
+.covid-card:hover{
+  transform: scale(1.13);
+  transition: transform .5s ease-out 0s;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+.covid-card::before, .covid-card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  content: '';
+  pointer-events: none;
+}
+.covid-card:hover::before, .covid-card:hover::after, .covid-card:focus::before, .covid-card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
 /* Scroll to Top */
 .back-to-top {
   position: fixed;
