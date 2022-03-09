@@ -101,4 +101,8 @@
     background-color: chartreuse;
   }
   
-  
+  /* particle js */
+#particles-js{
+  height: 100%;
+  background: rgb(109, 172, 253);
+}
