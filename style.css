@@ -212,4 +212,20 @@ img#flag {
   content: none;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-thumb{
+  background: -webkit-linear-gradient(transparent, #00c6ff);
+  border-radius: 6px;
+}
 
+::-webkit-scrollbar-thumb:hover{
+  background: -webkit-linear-gradient(transparent, #eee01d);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track{
+  background: #6c63ff;
+}
