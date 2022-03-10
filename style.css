@@ -102,22 +102,22 @@ img#flag {
   width: 40px;
 }
 .greens{
-  background-color: #7ffac7;
+  background-color: #7ffa9a;
   font: black;
 }
-
 .reds{
   background-color: #ed5f5f;
   font: black;
 }
 .blues{
-  background-color: #85baff;
+  background-color: #42C2FF;
   font: black;
 }
 .yellows{
   background-color: #ffd86b;
   font: black;
 }
+
 /* covid cards */
 .covid-card:hover{
   transform: scale(1.13);
@@ -137,6 +137,7 @@ img#flag {
 .covid-card:hover::before, .covid-card:hover::after, .covid-card:focus::before, .covid-card:focus::after {
   transform: scale3d(1, 1, 1);
 }
+
 /* Scroll to Top */
 .back-to-top {
   position: fixed;
@@ -151,28 +152,23 @@ img#flag {
   display: grid;
   perspective: 700px;
 }
-
 .card-flip {
   display: grid;
   grid-template-areas: "frontAndBack";
   transform-style: preserve-3d;
   transition: all 0.7s ease;
 }
-
 .card-flip div {
   backface-visibility: hidden;
   transform-style: preserve-3d;
 }
-
 .front {
   grid-area: frontAndBack;
 }
-
 .back {
   grid-area: frontAndBack;
   transform: rotateY(-180deg);
 }
-
 .card-container:hover .card-flip {
   transform: rotateY(180deg);
 }
@@ -182,13 +178,11 @@ img#flag {
 	display: inline-block;
 	vertical-align: top;
 }
-
- .p-5 .footer-links{
+.p-5 .footer-links{
 	color:  #ffffff;
 	margin: 20px 0 12px;
 	padding: 0;
 }
-
 .p-5 .footer-links a{
 	display:inline-block;
 	line-height: 1.8;
@@ -207,7 +201,6 @@ img#flag {
   margin-left: 20px;
   margin-right: 20px; 
 }
-
 .p-5 .footer-links .link-1:before {
   content: none;
 }
@@ -220,12 +213,10 @@ img#flag {
   background: -webkit-linear-gradient(transparent, #00c6ff);
   border-radius: 6px;
 }
-
 ::-webkit-scrollbar-thumb:hover{
   background: -webkit-linear-gradient(transparent, #eee01d);
   border-radius: 6px;
 }
-
 ::-webkit-scrollbar-track{
   background: #6c63ff;
 }
