@@ -229,6 +229,8 @@ img#flag {
 ::-webkit-scrollbar-track{
   background: #6c63ff;
 }
+
+/* contact us */
 .sidebar-contact{
   position:fixed;
   top:50%;
