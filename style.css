@@ -174,23 +174,23 @@ img#flag {
 }
 
 /* footer links */
-.p-5 .footer-left{
+ .footer-left{
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: center;
 }
-.p-5 .footer-links{
+ .footer-links{
 	color:  #ffffff;
-	margin: 20px 0 12px;
+
 	padding: 0;
 }
-.p-5 .footer-links a{
+ .footer-links a{
 	display:inline-block;
 	line-height: 1.8;
   font-weight:400;
 	text-decoration: none;
 	color:  inherit;
 } 
-.p-5 .footer-links a:before {
+ .footer-links a:before {
   content: "|";
   font-weight:300;
   font-size: 20px;
@@ -201,7 +201,7 @@ img#flag {
   margin-left: 20px;
   margin-right: 20px; 
 }
-.p-5 .footer-links .link-1:before {
+ .footer-links .link-1:before {
   content: none;
 }
 

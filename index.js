@@ -1,4 +1,4 @@
-fetch('https://corona.lmao.ninja/v2/countries/India')
+fetch('https://disease.sh/v3/covid-19/countries/india')
 .then((response) => {
   return response.json();
 })
