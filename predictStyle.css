@@ -153,3 +153,35 @@
 ::-webkit-scrollbar-track{
   background: #6c63ff;
 }
+
+/* footer links */
+.footer-left{
+	display: inline-block;
+	vertical-align: center;
+}
+ .footer-links{
+	color:  #ffffff;
+
+	padding: 0;
+}
+ .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+} 
+ .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  /* left: 20px; */ 
+  color: #fff;
+  display: inline-block;
+  /* padding-right: 5px; */ 
+  margin-left: 20px;
+  margin-right: 20px; 
+}
+ .footer-links .link-1:before {
+  content: none;
+}
