@@ -21,7 +21,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
     <div class="container">
-      <a href="#" class="navbar-brand">COVID-19 Prediction</a>
+      <a href="index.html" class="navbar-brand"><i class="fa-solid fa-house-chimney text-light"></i><br></a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
         <span class="navbar-toggler-icon"></span>
@@ -30,22 +30,13 @@
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="#cov-counter" class="nav-link">Covid Counter</a>
+            <a href="#intro" class="nav-link">Introduction</a>
           </li>
           <li class="nav-item">
-            <a href="#abt-project" class="nav-link">About</a>
+            <a href="#methodology" class="nav-link">Methodology</a>
           </li>
           <li class="nav-item">
-            <a href="#who" class="nav-link">WHO</a>
-          </li>
-          <li class="nav-item">
-            <a href="#icmr" class="nav-link">ICMR</a>
-          </li>
-          <li class="nav-item">
-            <a href="#faq" class="nav-link">FAQs</a>
-          </li>
-          <li class="nav-item">
-            <a href="#devs" class="nav-link">Developers</a>
+            <a href="#results" class="nav-link">Results</a>
           </li>
         </ul>
       </div>
@@ -58,40 +49,53 @@
       <div class="row align-items-center justify-content-between">
         <div class="col-md p-3">
           <h2>INTRODUCTION</h2>
-          <p>
-            The SARS-CoV-2 virus causes a contagious disease known as Coronavirus disease. 
-            The COVID-19 virus gets mediated predominantly through droplets of saliva and mucus of an ailing person. 
-            Elderly people and populations which suffer from prevalent health issues akin to diabetes, heart diseases, and chronic respiratory 
-            illness are more likely to develop grave illnesses. 
+          <p> 
+            The SARS-CoV-2 virus causes a contagious disease known as Coronavirus disease.
+            The COVID-19 virus gets mediated predominantly through droplets of saliva and mucus of an ailing person.
+            Elderly people and populations which suffer from prevalent health issues akin to diabetes, heart diseases,
+            and chronic respiratory illness are more likely to develop grave illnesses.
           </p>
           <p>
-            Patients might develop COVID-19 pneumonia as a result of being infected by the coronavirus for which the diagnosis using chest X-Ray is difficult and time-consuming, but at the same time, 
-            a chest x-ray is the most commonly available option that can even be used in underdeveloped and remote areas where there is a shortage of specialists. 
-            Therefore, the implementation of newfangled artificial intelligence along with X-ray imaging may help in the precise detection of this disease.
+            Patients might develop COVID-19 pneumonia as a result of being infected by the coronavirus for which the
+            diagnosis using chest X-Ray is difficult and time-consuming, but at the same time,
+            a chest x-ray is the most commonly available option that can even be used in underdeveloped and remote areas
+            where there is a shortage of specialists.
+            Therefore, the implementation of newfangled artificial intelligence along with X-ray imaging may help in the
+            precise detection of this disease.
           </p>
           <p>
-            In this project, a Residual Neural Network (ResNet-18) is used to classify image samples of chest X-Ray data of patients having 
+            In this project, a Residual Neural Network (ResNet-18) is used to classify image samples of chest X-Ray data
+            of patients having
             COVID-19 pneumonia thereby detecting the existence of Coronavirus in the patient.
           </p>
           <p>
-            Machine learning is the study of algorithms that systems can take advantage of to accomplish a certain task. The systems rely on patterns and differences in provided data to learn. 
+            Machine learning is the study of algorithms that systems can take advantage of to accomplish a certain task.
+            The systems rely on patterns and differences in provided data to learn.
             Machine learning algorithms help to build a systematic model based on data known as training data.
           </p>
           <p>
-            Convolutional Neural Networks come under Deep Learning, which is a subsection of ML. The working algorithms under Deep Learning compute the data in a way similar to the brain of a human, 
-            in an Artificial Neural Network, there are units called nodes, which are interconnected in tandem in a layer-wise fashion, in which each node performs a simple calculation.
+            Convolutional Neural Networks come under Deep Learning, which is a subsection of ML. The working algorithms
+            under Deep Learning compute the data in a way similar to the brain of a human,
+            in an Artificial Neural Network, there are units called nodes, which are interconnected in tandem in a
+            layer-wise fashion, in which each node performs a simple calculation.
           </p>
           <p>
-            CNNs are great with computations which require computation of pixel-related data and are used for tasks involving detection and identification of objects. 
-            In case of a complex problem which has many attributes, we can add in some extra layers to the Neural Network which can result in enhanced performance of the Network. 
+            CNNs are great with computations which require computation of pixel-related data and are used for tasks
+            involving detection and identification of objects.
+            In case of a complex problem which has many attributes, we can add in some extra layers to the Neural
+            Network which can result in enhanced performance of the Network.
           </p>
-          <p>By increasing layers in the Network, the layers are able to learn the complex attributes better and more accurately. 
-            However, adding more layers means more computation power is required, but simply having more layers will not always result in increased results. 
+          <p>By increasing layers in the Network, the layers are able to learn the complex attributes better and more
+            accurately.
+            However, adding more layers means more computation power is required, but simply having more layers will not
+            always result in increased results.
             If the Network gets too deep, it might result in the accuracy degraded performance.
           </p>
           <p>
-            This is where Residual Neural Networks come into the picture. ResNet helps us to solve this degradation in performance which occurs by adding additional layers by introducing the concept of skip connections also known as shortcuts 
-            in between layers which allow faster transfer between deep layers. 
+            This is where Residual Neural Networks come into the picture. ResNet helps us to solve this degradation in
+            performance which occurs by adding additional layers by introducing the concept of skip connections also
+            known as shortcuts
+            in between layers which allow faster transfer between deep layers.
           </p>
         </div>
       </div>
@@ -105,48 +109,66 @@
         <div class="col-md p-2">
           <h2>METHODOLOGY</h2>
           <p class="lead">
-            DATA ACQUISITION 
+            DATA ACQUISITION
           </p>
           <p>
-            A reliable source of data is required to modulate a considerable ML model. A model can only become as accurate as the dataset which is used in training and validating it.
-            COVID-19 Radiography Dataset (by Qatar University, Doha) was finalized, which contained Chest X-Ray samples of 3 classes normal, viral pneumonia, and 
+            A reliable source of data is required to modulate a considerable ML model. A model can only become as
+            accurate as the dataset which is used in training and validating it.
+            COVID-19 Radiography Dataset (by Qatar University, Doha) was finalized, which contained Chest X-Ray samples
+            of 3 classes normal, viral pneumonia, and
             COVID-19 which had 10192, 1345, and 3616 samples respectively.
           </p>
           <p class="lead">
-            DATA PRE-PROCESSING 
+            DATA PRE-PROCESSING
           </p>
           <p>
             The following methods were used to pre-process the dataset:
           </p>
           <ul>
             <li>Compose - It is used to compose multiple transforms together.</li>
-            <li>Resize - Used to resize the input tensor to a specified size. If the specified size is greater, resizing is done to incorporate the additional elements.</li>
-            <li>Normalize - This normalizes an image in tensor form by using mean deviation along with standard deviation techniques.  </li>
-            <li>RandomHorizontalFlip - This is used to horizontally flip an image in a random fashion with a specified probability 'p'.</li>
-            <li>ToTensor - This transformation converts images that are in PIL format into a tensor format. Output tensor will have the dimensions with the format (C*H*W), where C is the count of Channels, H is the height, W is the width.  </li>
+            <li>Resize - Used to resize the input tensor to a specified size. If the specified size is greater, resizing
+              is done to incorporate the additional elements.</li>
+            <li>Normalize - This normalizes an image in tensor form by using mean deviation along with standard
+              deviation techniques. </li>
+            <li>RandomHorizontalFlip - This is used to horizontally flip an image in a random fashion with a specified
+              probability 'p'.</li>
+            <li>ToTensor - This transformation converts images that are in PIL format into a tensor format. Output
+              tensor will have the dimensions with the format (C*H*W), where C is the count of Channels, H is the
+              height, W is the width. </li>
           </ul>
           <p class="lead">
-            MODEL DEVELOPMENT AND EVALUATION 
+            MODEL DEVELOPMENT AND EVALUATION
           </p>
           <p>
-            The finalized dataset of the COVID-19 Radiography Dataset from Qatar University, Doha was imported into Jupyter Notebook. 
-            After conducting Data Pre-Processing a custom dataset was created to associate the transformed image with the respective classes as 'normal', 'viral', 'covid'. 
-            The dataset was then divided into 2 sets namely Training and Test as per 70:30 split, i.e., 70% Training data (10,607 images) and 30% Test data (4,546 Images).
+            The finalized dataset of the COVID-19 Radiography Dataset from Qatar University, Doha was imported into
+            Jupyter Notebook.
+            After conducting Data Pre-Processing a custom dataset was created to associate the transformed image with
+            the respective classes as 'normal', 'viral', 'covid'.
+            The dataset was then divided into 2 sets namely Training and Test as per 70:30 split, i.e., 70% Training
+            data (10,607 images) and 30% Test data (4,546 Images).
           </p>
           <p>
-            The batch size was defined and the data loader was coded combined actual labels with transformed images into singular train and test datasets and prepared data loader according to batch size with shuffling enabled.
+            The batch size was defined and the data loader was coded combined actual labels with transformed images into
+            singular train and test datasets and prepared data loader according to batch size with shuffling enabled.
           </p>
           <p>
-            A function called show_images function was defined and the ResNet18 Model was imported from PyTorch Library. The defined show_images function plotted images in a grid with labels - Actual labels were shown on the x-axis in black 
-            font color and the predicted value label was shown on the y-axis in green font color in green if correctly predicted else in red font color.
+            A function called show_images function was defined and the ResNet18 Model was imported from PyTorch Library.
+            The defined show_images function plotted images in a grid with labels - Actual labels were shown on the
+            x-axis in black
+            font color and the predicted value label was shown on the y-axis in green font color in green if correctly
+            predicted else in red font color.
           </p>
           <p>
-            A function called show_preds function was defined. The show_preds function got images and labels from each batch stored in the previously created data-loader dataset. 
-            Then the image was passed as an input to the resnet-18 model (after training) and the predicted output was stored. Finally, the show_images function was called to show the image, actual label, and predicted label. 
+            A function called show_preds function was defined. The show_preds function got images and labels from each
+            batch stored in the previously created data-loader dataset.
+            Then the image was passed as an input to the resnet-18 model (after training) and the predicted output was
+            stored. Finally, the show_images function was called to show the image, actual label, and predicted label.
             To initiate the model training phase, the train function was defined and called
           </p>
           <p>
-            Post the training process, the trained model was exported as a .pth file. This model was then tested with a sample image from outside the used dataset to ensure the model's functionality in an unbiased and accurate manner.
+            Post the training process, the trained model was exported as a .pth file. This model was then tested with a
+            sample image from outside the used dataset to ensure the model's functionality in an unbiased and accurate
+            manner.
           </p>
         </div>
       </div>
@@ -155,18 +177,19 @@
 
   <!-- Results -->
   <section id="results" class="p-5 bg-light text-dark">
-    <div class="container">
-    <h2>RESULTS</h2>
-      <div class="row align-items-center justify-content-between">
-        <div class="col-6 p-2">
-          <img src="img/ValidationLoss_img.PNG">
+    <div class="container" >
+      <h2>RESULTS</h2>
+      <div class="row text-center justify-content-between">
+        <div class="col-lg-6 p-2">
+          <img style="height: 100%; width: 100%;" src="img/ValidationLoss_img.PNG">
         </div>
-        <div class="col-6 p-2">
-            <img src="img/Accuracy_img.PNG">
-          </div>
+        <div class="col-lg-6 p-2">
+          <img style="height: 100%; width: 100%;" src="img/Accuracy_img.PNG">
+        </div>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque saepe voluptas vero ipsa fugit, 
-          aliquid impedit, beatae nisi illum itaque. Eveniet libero illo, sequi fugit animi impedit odio veniam?</p>
+      <p class="text-center justify-content-between">
+        The developed model is trained to give a Validation Loss of 0.0587 and an Accuracy of 98.11%.
+      </p>
     </div>
   </section>
 
@@ -175,15 +198,9 @@
     <div class="footer-left">
       <p class="footer-links">
         <br>
-        <a href="#" class="link-1">Home</a>
-
-        <a href="#learn">About</a>
-
-        <a href="#questions">FAQs</a>
-
-        <a href="#developers">Developers</a>
-
-        <a href="#contact">Contact</a>
+        <a href="#intro">Introduction</a>
+        <a href="#methodology">Methodology</a>
+        <a href="#results">Results</a>
       </p>
     </div>
   </footer>
